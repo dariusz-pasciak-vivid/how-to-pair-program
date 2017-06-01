@@ -4,6 +4,13 @@ I've had to force myself to pair with lots of different for the last
 five years. Pairing is the best way to learn the ecosystem, but also new
 development practices. If I didn't learn, I couldn't do my job.
 
+
+Why pair program?
+* increase productivity
+* deliver better code
+* catch bugs sooner
+* konwledge sharing
+
 First pairing experience:
 * good friends
 * both have been developing solo some time
@@ -45,6 +52,19 @@ Other Tips
 * think outloud - all the time
 * agree on small tasks (1-2 hours) and focus on that (as opposed to the entire story)
 * retrospect frequently to make sure you're not straying from your main goal
+
+* remote pair programming
+  * possible, but much harder
+  * works well when the pair has been working together for some time
+  * need solid tools
+    * Internet (show some providers here)
+    * Screen Hero
+
+* Learn to type
+  * as a professional developer, this will be your crutch
+  * you don't have to type fast, but you have to learn to type
+  * this is like the scales of a musicion
+  * work on your shortcomings
 
 
 What to do when:
