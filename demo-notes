@@ -1,44 +1,60 @@
----------------
-Try something on linux:
+Why me?
 
-docker run -it --rm debian:jessie
-cat /etc/debian_version
+I've had to force myself to pair with lots of different for the last
+five years. Pairing is the best way to learn the ecosystem, but also new
+development practices. If I didn't learn, I couldn't do my job.
 
-docker run -it --rm debian:wheezy
-cat /etc/debian_version
+First pairing experience:
+* good friends
+* both have been developing solo some time
+* each wanted to go its own way
+* got nothing done on day 1
+* exhausted
 
+Basic Rules of the Road
+* two drivers
+* two keyboards (or laptop and keyboard)
+* two monitors
+* "What do you want me to type"
+* something concrete to work on
+* (picture of Chris here)
 
-docker run -it --rm ubuntu:14.04
-cat /etc/lsb-release
+  Two Drivers
+    * multiple keyboards
+    * multiple monitors
+    * you don't need to extend display on two monitors when pairing
+      * mirror displays instead
+      * nice setup for mac when you open the laptop it remembers your settings
 
-docker run -it --rm ubuntu:16.04
-cat /etc/lsb-release
+    What does this ^ mean?
+      * you are not king
+      * workstation is not your castle
+      * give up your super-customized dev environment
 
+Rules of the Road
+* keep your eyes on the road
+  * no twitter
+  * no email
+  * absolutely no Facebook
+* important phone calls OK, but let your pair know
 
+Other Tips
+* do not pair on trivial things
+* for research ok to get two laptops, but then put one away
+* do not neglect hygiene - disrespectful
+* periodic breaks
 
-run mysql here
+What to do when:
+1. You don't get any space
+   * practice the art of encroachment
+   * inch in a little by litte, but do it loudly
+     * if they hear you, they will move
+   * put your arms on the desk
 
-----------
-
-Show this when you get to the first case study
-
-# In-Memory MySQL
-
-cd ~/projects/thrill-jockey/app
-
-# ON DISK
-
-docker run --rm -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 mysql:5.6
-
-time ADMIN_EMAIL=a@b.com ADMIN_PASSWORD=password bundle exec rake db:setup
-
-
-# TMPFS
-
-docker run --rm -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 mysql:5.6 --datadir /dev/data
-
-time ADMIN_EMAIL=a@b.com ADMIN_PASSWORD=password bundle exec rake db:setup
-
-
-So much for the repository pattern :-)
-
+2. It's been two hours and you got nothing done
+  * Stop talking so much. Pick one way and just do it
+  * STOP REFACTORING! Get stuff working, then refactor
+  Watch out for:
+  * all talk, no code
+    * maybe you shouldn't be working on story
+    * maybe you should just pick one
