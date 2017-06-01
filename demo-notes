@@ -1,0 +1,44 @@
+---------------
+Try something on linux:
+
+docker run -it --rm debian:jessie
+cat /etc/debian_version
+
+docker run -it --rm debian:wheezy
+cat /etc/debian_version
+
+
+docker run -it --rm ubuntu:14.04
+cat /etc/lsb-release
+
+docker run -it --rm ubuntu:16.04
+cat /etc/lsb-release
+
+
+
+run mysql here
+
+----------
+
+Show this when you get to the first case study
+
+# In-Memory MySQL
+
+cd ~/projects/thrill-jockey/app
+
+# ON DISK
+
+docker run --rm -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 mysql:5.6
+
+time ADMIN_EMAIL=a@b.com ADMIN_PASSWORD=password bundle exec rake db:setup
+
+
+# TMPFS
+
+docker run --rm -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 mysql:5.6 --datadir /dev/data
+
+time ADMIN_EMAIL=a@b.com ADMIN_PASSWORD=password bundle exec rake db:setup
+
+
+So much for the repository pattern :-)
+
